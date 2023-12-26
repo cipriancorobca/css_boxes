@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalnia">
+    </head>
+    <body>
+        <h1>CSS boxes</h1>
+        <div id="display">
+            <div id="sandbox">
+                <div id="box"></div>
+            </div>
+            <div id="css">
+                <textarea readonly>Click 'Get CSS' to display css code here</textarea>
+                <button id="get">Get CSS</button>
+            </div>
+        </div>
+        <div id="control-area">
+            <div id="toggles">
+                <button style="text-align: right;" class="toggle active-toggle">Background</button>
+                <button style="text-align: left;" class="toggle active-toggle">Box</button>
+            </div>
+            <div id="controls">
+                <div id="bg-controls">
+                    <select>
+                        <option value="solid-colour">Solid Colour</option>
+                        <option value="wallpaper">Wallpaper</option>
+                    </select>
+                    <div class="bg-div open-div" id="solid-colour-div">
+                        <input type="color" id="colour-picker" value="#41e672">
+                    </div>
+                    <div class="bg-div" id="wallpaper-div">
+                        <button class="wp-select" style="background-image: url('./wp1.jpg');background-size: cover;"></button>
+                        <button class="wp-select" style="background-image: url('./wp2.jpg');background-size: cover;"></button>
+                        <button class="wp-select" style="background-image: url('./wp3.jpg');background-size: cover;"></button>
+                        <button class="wp-select" style="background-image: url('./wp4.jpg');background-size: cover;"></button>
+                        <button class="wp-select" style="background-image: url('./wp5.jpg');background-size: cover;"></button>
+                        <button class="wp-select" style="background-image: url('./wp6.jpg');background-size: cover;"></button>
+                    </div>
+                </div>
+                <div id="css-controls">
+                    <p class="slider"><label>Transparency </label><br><input id="transparency" type="range" min="0" max="255" value="200"></p>
+                    <p class="slider"><label>Background blur </label><br><input id="bg-blur" type="range" min="0" max="33" value="15"></p>
+                    <p class="slider"><label>Border thickness </label><br><input id="border" type="range" min="0" max="25" value="2"></p>
+                    <p class="slider"><label>Horizontal lining </label><br><input id="hr" type="range" min="-225" max="225" value="-3"></p>
+                    <p class="slider"><label>Vertical lining </label><br><input id="vr" type="range" min="-225" max="225" value="3"></p>
+                    <p class="slider"><label>Shadow blur </label><br><input id="shadow-blur" type="range" min="0" max="1000" value="5"></p>
+                    <p class="slider"><label>Shadow distance </label><br><input id="shadow-dist" type="range" min="-225" max="225" value="2"></p>
+                    <p class="slider"><label>Shadow opacty </label><br><input id="shadow-vb" type="range" min="0" max="255" value="200"></p>
+                    <p class="slider">
+                        <label>Box colour </label><input id="bg-colour" class="colourProps" type="color" value="#eeffff">
+                        <label>Border colour </label><input id="border-colour" class="colourProps" type="color" value="#ffffff">
+                        <label>Shadow colour </label><input id="shadow-colour" class="colourProps" type="color" value="#010101">
+                        <label>Inset </label><input id="inset" type="checkbox">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
