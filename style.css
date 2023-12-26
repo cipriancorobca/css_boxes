@@ -33,6 +33,7 @@ h1
     border-radius: calc(0.6vw + 0.6vh);
     border:1px solid #F5E8C7;
     background-color: #41e672;
+    overflow: hidden;
 }
 
 #box
