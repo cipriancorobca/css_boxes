@@ -195,12 +195,12 @@ $(function()
         let textarea = document.getElementsByTagName("textarea")
 
         textarea[0].innerHTML = 
-            bgBlur + "\n" +
-            webkistBgBlur + "\n" +
-            boxSh + "\n" +
-            webkistBoxSh + "\n" +
-            boxBg + "\n" +
-            border
+            bgBlur + ";\n" +
+            webkistBgBlur + ";\n" +
+            boxSh + ";\n" +
+            webkistBoxSh + ";\n" +
+            boxBg + ";\n" +
+            border + ";"
 
         navigator.clipboard.writeText(textarea[0].innerHTML).then(() =>
         {
